@@ -93,18 +93,18 @@ repo_url: https://github.com/MMNmedia/mmn-docs-2
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
 nav:
-  - Welcome: index.md
-  - 37HRD Account: 37hrd-account/0000-introduction.md
-    - Request Access: 37hrd-account/0001-request-access.md
-    - Self-registration: 37hrd-account/0002-self-registration.md
-    - Logging in: 37hrd-account/0003-logging-in.md
-    - Request a password reset: 37hrd-account/0004-request-a-password-reset.md
-    - Change profile settings: 37hrd-account/0005-change-profile-settings.md
-    - Enable 2FA: 37hrd-account/0006-enable-2fa.md
-    - Delete my account: 37hrd-account/0007-delete-my-account.md
-  - 37HRD Tools: 37hrd-tools/0010-introduction.md
-    - User access levels: 37hrd-tools/0011-user-access-levels.md
-    - User management: 37hrd-tools/0012-user-management.md
+  - "Welcome": "index.md"
+  - "37HRD Account": "37hrd-account/0000-introduction.md"
+    - "Request Access": "37hrd-account/0001-request-access.md"
+    - "Self-registration": "37hrd-account/0002-self-registration.md"
+    - "Logging in": "37hrd-account/0003-logging-in.md"
+    - "Request a password reset": "37hrd-account/0004-request-a-password-reset.md"
+    - "Change profile settings": "37hrd-account/0005-change-profile-settings.md"
+    - "Enable 2FA": "37hrd-account/0006-enable-2fa.md"
+    - "Delete my account": "37hrd-account/0007-delete-my-account.md"
+  - "37HRD Tools": "37hrd-tools/0010-introduction.md"
+    - "User access levels": "37hrd-tools/0011-user-access-levels.md"
+    - "User management": "37hrd-tools/0012-user-management.md"
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
