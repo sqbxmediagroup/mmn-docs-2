@@ -27,7 +27,7 @@
 # | - https://www.mkdocs.org/user-guide/configuration/#site_url                                            |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-site_name: 'Documentation & Support | MMN'
+site_name: Documentation & Support | MMN
 site_description: 'Access support documentation for MMN's tools, websites and services.'
 site_author: 'MMN'
 site_url: 'https://docs.37hrd.uk'
