@@ -310,6 +310,10 @@ theme:
   #
   #- toc.integrate          # Include the TOC sections in the left navugation.
   
+  # Content Edit Button
+  #
+  - content.action.edit
+  
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
   # | The "icon" section allows you to define a icon to use for the logo and/or repository.                |
@@ -338,6 +342,7 @@ theme:
   icon:
     logo: 'material/library'
     repo: 'material/library'
+    edit: 'material/pencil'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -439,7 +444,7 @@ extra:
   # | - https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#generator-notice          |
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
-  generator: true
+  generator: false
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
