@@ -314,6 +314,10 @@ theme:
   #
   - content.action.edit
   
+  # Footer Nav
+  #
+  - navigation.footer
+  
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
   # | The "icon" section allows you to define a icon to use for the logo and/or repository.                |
