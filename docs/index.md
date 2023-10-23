@@ -43,14 +43,14 @@ Whilst the source is available for this site on GitHub ([sqbx-docs-gh]), we do n
 Although we do endeavour to keep the information on this site up-to-date, SQBX Media Group and its partners cannot and will not accept any responsibility for inaccurate data and/or liabilities.
 
 ## Contact
-Spotted a mistake? Contact us: [mailto:docs-gh-spt@sqbx.uk](docs-gh-spt@sqbx.uk).
+Spotted a mistake? Contact us: [docs-gh-spt@sqbx.uk](mailto:docs-gh-spt@sqbx.uk).
 
-Need further help or advice? Email: [mailto:desk-spt@sqbx.uk](desk-spt@sqbx.uk).
+Need further help or advice? Email: [desk-spt@sqbx.uk](mailto:desk-spt@sqbx.uk).
 
 
-_Need to contact us regarding a data protection issue? Email: [mailto:dpo-iss-spt@sqbx.uk](dpo-iss-spt@sqbx.uk)._
+_Need to contact us regarding a data protection issue? Email: [dpo-iss-spt@sqbx.uk](mailto:dpo-iss-spt@sqbx.uk)._
 
-_Need to contact us regarding a copyright issue? Email: [mailto:copy-iss-spt@sqbx.uk](copy-iss-spt@sqbx.uk)._
+_Need to contact us regarding a copyright issue? Email: [copy-iss-spt@sqbx.uk](mailto:copy-iss-spt@sqbx.uk)._
 
 
 &copy; SQBX Media Group & contributors, 2023.
