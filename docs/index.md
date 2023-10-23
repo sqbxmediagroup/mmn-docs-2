@@ -11,7 +11,7 @@
 
 # Documentation & Guides
 
-!(https://cdn.37hrd.uk/imgstor/SQBX-MG-TEIFI.jpg)
+![SQBX Media Group logo on top of a picture of clouds.](https://cdn.37hrd.uk/imgstor/SQBX-MG-TEIFI.jpg)
 
 Shwmae a croeso! Welcome to SQBX Docs, your one-stop shop for production, web services, and technical guides!
 
