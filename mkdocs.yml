@@ -165,7 +165,7 @@ theme:
   # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/#favicon             |
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
-  #favicon: 'assets/images/favicon.png'
+  favicon: 'https://cdn.37hrd.uk/brand/sqbx-bx2023-white.svg'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -344,7 +344,7 @@ theme:
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
   icon:
-    logo: 'material/library'
+    logo: 'https://cdn.37hrd.uk/brand/sqbx-bx2023-white.svg'
     repo: 'material/library'
     edit: 'material/pencil'
   
