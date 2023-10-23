@@ -75,8 +75,8 @@ docs_dir: docs/
 # | - https://www.mkdocs.org/user-guide/configuration/#edit_uri                                            |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-repo_name: sqbxmediagroup/mmn-docs-2
-repo_url: https://github.com/sqbxmediagroup/mmn-docs-2
+repo_name: sqbxmediagroup/docs
+repo_url: https://github.com/sqbxmediagroup/docs
 #edit_uri: tree/master/docs # Uncomment to define a different URI/URL for the "edit" option
 
 # +--------------------------------------------------------------------------------------------------------+
@@ -437,7 +437,7 @@ extra:
   # +------------------------------------------------------------------------------------------------------+
   social:
     - icon: 'fontawesome/brands/github'
-      link: 'https://github.com/sqbxmediagroup/mmn-docs-2'
+      link: 'https://github.com/sqbxmediagroup/docs'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
