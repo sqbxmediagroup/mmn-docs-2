@@ -27,9 +27,9 @@
 # | - https://www.mkdocs.org/user-guide/configuration/#site_url                                            |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-site_name: Documentation and Support | MMN
-site_description: 'Access support documentation for MMN’s tools, websites and services.'
-site_author: 'MMN'
+site_name: SQBX Docs
+site_description: 'Access support documentation for SQBX’s tools, websites and services, including My37HRD.'
+site_author: 'SQBX / 37HRD'
 site_url: 'https://docs.37hrd.uk'
 
 # +--------------------------------------------------------------------------------------------------------+
@@ -45,7 +45,7 @@ site_url: 'https://docs.37hrd.uk'
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
 copyright: |
-  &copy; MMN
+  &copy; SQBX Media Group 2023  &#124;  <a href="www.sqbx.uk" target="_blank">www.sqbx.uk</a>
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -75,8 +75,8 @@ docs_dir: docs/
 # | - https://www.mkdocs.org/user-guide/configuration/#edit_uri                                            |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-repo_name: MMNmedia/mmn-docs-2
-repo_url: https://github.com/MMNmedia/mmn-docs-2
+repo_name: sqbxmediagroup/mmn-docs-2
+repo_url: https://github.com/sqbxmediagroup/mmn-docs-2
 #edit_uri: tree/master/docs # Uncomment to define a different URI/URL for the "edit" option
 
 # +--------------------------------------------------------------------------------------------------------+
@@ -437,7 +437,7 @@ extra:
   # +------------------------------------------------------------------------------------------------------+
   social:
     - icon: 'fontawesome/brands/github'
-      link: 'https://github.com/MMNmedia/mmn-docs-2'
+      link: 'https://github.com/sqbxmediagroup/mmn-docs-2'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
