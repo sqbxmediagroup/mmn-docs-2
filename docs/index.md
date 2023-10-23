@@ -18,7 +18,8 @@ Shwmae a croeso! Welcome to SQBX Docs, your one-stop shop for production, web se
 
 
 ## What is SQBX?
-SQBX Media Group _pronounced "Square Box"_ is a media production company based in Cardiff, Wales. __'We create'__ is our motto, as we produce all forms of digital media: videos, short films, websites, advertising & marketing, digital tools & services, radio shows, and a whole lot more!
+SQBX Media Group (_pronounced "Square Box"_) is a media production company based in Cardiff, Wales.
+__'We create'__ is our motto, as we produce all forms of digital media: videos, short films, websites, advertising & marketing, digital tools & services, radio shows, and a whole lot more!
 
 To find out more about what we do, take a look at our website: [sqbx-web].
 
