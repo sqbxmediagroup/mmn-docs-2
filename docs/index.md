@@ -1,90 +1,51 @@
-[use]: https://github.com/Andre601/mkdocs-template/generate
+<!-- Referenced links -->
+[sqbx-web]: https://sqbx.uk
+[sqbx-spt]: https://support.sqbx.uk
+[sqbx-cdn]: https://cdn.sqbx.uk
+[37hrd-web]: https://37hrd.uk
+[my37hrd]: https://my.37hrd.uk
+[my37hrd-login]: https://my.37hrd.uk/auth/login
+[my37hrd-selfreg]: https://my.37hrd.uk/auth/join
+[my37hrd-pwd]: https://my.37hrd.uk/auth/pwdreset
+[sqbx-docs-gh]: https://github.com/sqbxmediagroup/docs
 
-[MkDocs]: https://www.mkdocs.org/
+# Documentation & Guides
 
-[squidfunk]: https://github.com/squidfunk
-[MkDocs Material Theme]: https://github.com/squidfunk/mkdocs-material
+!(https://cdn.37hrd.uk/imgstor/SQBX-MG-TEIFI.jpg)
 
-[facelessuser]: https://github.com/facelessuser
-[PyMdown Extensions]: https://github.com/facelessuser/pymdown-extensions/
+Shwmae a croeso! Welcome to SQBX Docs, your one-stop shop for production, web services, and technical guides!
 
-[Netlify]: https://netlify.com
 
-[mkdocs.yml]: https://github.com/Andre601/mkdocs-template/blob/master/mkdocs.yml
-[docs folder]: https://github.com/Andre601/mkdocs-template/blob/master/docs
-[workflow]: https://github.com/Andre601/mkdocs-template/blob/master/.github/workflows/deploy.yml
 
-[LICENSE]: https://github.com/Andre601/mkdocs-template/blob/master/LICENSE
+## What is SQBX?
+SQBX Media Group _pronounced "Square Box"_ is a media production company based in Cardiff, Wales. __'We create'__ is our motto, as we produce all forms of digital media: videos, short films, websites, advertising & marketing, digital tools & services, radio shows, and a whole lot more!
 
-# MkDocs Material Template
-This is a template repository for anyone that wants to use the MkDocs Material Theme.
+To find out more about what we do, take a look at our website: [sqbx-web].
 
 ## Getting Started
-To get started, first clone this template by clicking on the Green button labeled [`Use this template`][use].  
-On the new screen, give your repository a name and make sure to check `Include all branches`. This will make sure that the `gh-pages` branch is included, or otherwhise publishing the docs to GitHub Pages could cause errors (See [Troubleshooting](#troubleshooting)).
+There is a **_lot_** of content on this website, so please don't try to use this service blindly! To help you out, we have broken the key areas of this site into sections, shown below:
 
-### Creating pages
-To create new pages, just add new markdown files to the [docs folder] of the repository and edit them.  
-MkDocs will then turn those into static HTML pages once you [build](#build-pages) or [deploy](#deploy-to-github) the pages.
+- [Using SQBX Docs]
+- [My37HRD]
+- [projectBase]
+- [Production]
+- [Technical]
 
-The template also has some pre-made settings for you to help you with creating documentation much easier.  
-In the [mkdocs.yml] will you find many settings that you can alter. Please check the comments and the links they have for more info.
+We advise to avoid the 'technical' area as it will contain a lot of irrelevant information to everyone except SQBX staff. Don't worry, nothing confidential is stored on this site.
 
-It also contains some extensions that might be useful including:
+## Usage Policy
+There are many legitimate reasons for accessing and using this website - it contains a lot of useful support for users of our services, and for those who produce content with/for us. However, please do not share any material from this website on any other service, or in any forms. The content on this site is copyright of SQBX Media Group.
 
-- Admonition
-- CodeHilite
-- ToC
-- [PyMdown Extensions]
+Whilst the source is available for this site on GitHub ([sqbx-docs-gh]), we do not allow edits from anyone other than approved SQBX staff. That said, if you spot any issues or errors, please do not hesitate to contact us - our details are below.
 
-You're free to add, edit or remove any extension at your own discretion, but keep in mind that some expansions might caus compatibility issues with others.
+Although we do endeavour to keep the information on this site up-to-date, SQBX Media Group and its partners cannot and will not accept any responsibility for inaccurate data and/or liabilities.
 
-## Build Pages
-To build pages (locally) can you use the `mkdocs build` command in your prefered command prompt.  
-Note that for the successful execution of this command you have to...
+## Contact
+Spotted a mistake? Contact us: [mailto:docs-gh-spt@sqbx.uk](docs-gh-spt@sqbx.uk).
+Need further help or advice? Email: [mailto:desk-spt@sqbx.uk](desk-spt@sqbx.uk).
 
-- ...be in the folder that contains the `mkdocs.yml`
-- ...have Python 3.7 installed
-- ...have MkDocs and all required dependencies such as Material for MkDocs installed.  
-Note that Material for MkDocs automatically downloads MkDocs and also certain extensions such as the [PyMdown Extensions].
+_Need to contact us regarding a data protection issue? Email: [mailto:dpo-iss-spt@sqbx.uk](dpo-iss-spt@sqbx.uk)._
+_Need to contact us regarding a copyright issue? Email: [mailto:copy-iss-spt@sqbx.uk](copy-iss-spt@sqbx.uk)._
 
-MkDocs would now build the HTML in the defined configuration folder for you to use.
 
-## Deploy to GitHub
-If you want to publish the pages on GitHub Pages can you use the [premade workflow][workflow] for this.  
-This workflow will setup Python, download Material for MkDocs and all its dependencies and deploy the pages to the `gh-pages` branch to then be viewable under `<username>.github.io/<repository>` (unless you defined a specific CNAME through a CNAME file in the [docs folder]).
-
-Note that in order for this to work will you need to have a `gh-pages` branch already made.
-
-## Netlify
-Netlify is an amazing service to build and deploy pages. This template comes with a `runtime.txt` which is used by Netlify to determine the Python version used (They use an old version of Python... Don't ask why).
-
-For more information, please check out their website.
-
-## Troubleshooting
-> **The deploy action gives me an error when deploying. What is the issue?**
-
-There can be many issues but the most common ones are that you either don't have a `gh-pages` branch set or that the `requirements.txt` file is missing or its content is invalid.
-
-> **Can I alter the overall style of the pages?**
-
-Yes. Material for MkDocs supports Theme extensions, meaning you can override specific parts of a theme by providing the particula file in a folder and defining this folder as the `custom_dir` one in the [mkdocs.yml].  
-This template ships with a `theme` folder that can be used for that and you can just uncomment the aforementioned line in the YAML file.
-
-## Dependabot
-The repository contains a `dependabot.yml` file inside the `.github` folder which allows automatic updates through GitHub's Dependabot.  
-It is configured to target both Python dependencies (inside the `requirements.txt`) and GitHub Actions dependencies, to make sure bot are updated accordingly.
-
-Note that it is configured by default to add the `Type: Update (Dependency)` label and also the `Target: Python (pip)` label for Python and `Target: GitHub Actions` label for GitHub Actions Dependencies.  
-Those labels don't exist by default so you have to either create them, or alter the ones in the dependabot.yml (You can also just remove the `labels` sections).
-
-## Credits
-A big thank you goes to the following people/groups:
-
-- [MkDocs] for providing the software, to generate documentation.
-- [squidfunk] for the [MkDocs Material Theme].
-- [facelessuser] for the [PyMdown Extensions].
-
-## License
-This template is served under the MIT license.  
-Read the [LICENSE] file for more info.
+&copy; SQBX Media Group & contributors, 2023.
