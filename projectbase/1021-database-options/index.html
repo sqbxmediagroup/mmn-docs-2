@@ -1,0 +1,957 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Access support documentation for SQBX’s tools, websites and services, including My37HRD.">
+      
+      
+        <meta name="author" content="SQBX / 37HRD">
+      
+      
+        <link rel="canonical" href="https://docs.37hrd.uk/projectbase/1021-database-options/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.1.17">
+    
+    
+      
+        <title>ProjectBase Database Options - SQBX Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Figtree:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Figtree";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#projectbase-database-options" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SQBX Docs" class="md-header__button md-logo" aria-label="SQBX Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SQBX Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ProjectBase Database Options
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sqbxmediagroup/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sqbxmediagroup/docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Welcome
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../37hrd-account/0000-introduction/" class="md-tabs__link">
+        37HRD Account
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../37hrd-tools/0010-introduction/" class="md-tabs__link">
+        37HRD Tools
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SQBX Docs" class="md-nav__button md-logo" aria-label="SQBX Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    SQBX Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sqbxmediagroup/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sqbxmediagroup/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          37HRD Account
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          37HRD Account
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../37hrd-account/0000-introduction/" class="md-nav__link">
+        Introduction to Accounts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../37hrd-account/0001-request-access/" class="md-nav__link">
+        Request Access
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../37hrd-account/0002-self-registration/" class="md-nav__link">
+        Self-registration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../37hrd-account/0003-logging-in.md" class="md-nav__link">
+        Logging in
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../37hrd-account/0004-request-a-password-reset.md" class="md-nav__link">
+        Request a password reset
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../37hrd-account/0005-change-profile-settings.md" class="md-nav__link">
+        Change profile settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../37hrd-account/0006-enable-2fa.md" class="md-nav__link">
+        Enable 2FA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../37hrd-account/0007-delete-my-account.md" class="md-nav__link">
+        Delete my account
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          37HRD Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          37HRD Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../37hrd-tools/0010-introduction/" class="md-nav__link">
+        Introduction to Tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../37hrd-tools/0011-user-access-levels.md" class="md-nav__link">
+        User access levels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../37hrd-tools/0012-user-management.md" class="md-nav__link">
+        User management
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    Tables
+  </a>
+  
+    <nav class="md-nav" aria-label="Tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#credit-types" class="md-nav__link">
+    Credit Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Credit Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#producer" class="md-nav__link">
+    Producer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directors" class="md-nav__link">
+    Directors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writers" class="md-nav__link">
+    Writers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production-managers" class="md-nav__link">
+    Production Managers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera-department" class="md-nav__link">
+    Camera Department
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genre-types" class="md-nav__link">
+    Genre Types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/sqbxmediagroup/docs/edit/master/docs/projectbase/1021-database-options.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="projectbase-database-options">ProjectBase Database Options<a class="headerlink" href="#projectbase-database-options" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>If you have access to </p>
+<h2 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Credit Types</li>
+<li>Credit Listings (Project Listings, Credit Types, Personnel Listings)</li>
+<li>Personnel Listings</li>
+<li>Project Listings</li>
+<li>Media Types</li>
+<li>Genre Types</li>
+</ul>
+<h3 id="credit-types">Credit Types<a class="headerlink" href="#credit-types" title="Permanent link">&para;</a></h3>
+<h4 id="producer">Producer<a class="headerlink" href="#producer" title="Permanent link">&para;</a></h4>
+<p>Bank <code>ctyp_00010</code> through to <code>ctyp_00049</code> are explicitly reserved for various types of producers.</p>
+<ul>
+<li>ctyp_00010 - producer</li>
+<li>ctyp_00011 - executive producer</li>
+<li>ctyp_00012 - associate producer</li>
+<li>ctyp_00013 - supervising producer</li>
+<li>ctyp_00014 - co-producer</li>
+<li>ctyp_00015 - line producer</li>
+<li>ctyp_00016 - co-executive producer</li>
+<li>ctyp_00017 - assistant producer</li>
+<li>ctyp_00018 - associate producer</li>
+<li>ctyp_00019 - production coordinator</li>
+<li>ctyp_00020 - series producer</li>
+<li>ctyp_00021 - segment producer</li>
+<li>ctyp_00022 - field producer</li>
+<li>ctyp_00023 - post producer</li>
+<li>ctyp_00024 - showrunner</li>
+<li>ctyp_00025 - co-showrunner</li>
+<li>ctyp_00026 - series editor</li>
+</ul>
+<h4 id="directors">Directors<a class="headerlink" href="#directors" title="Permanent link">&para;</a></h4>
+<p>Bank <code>ctyp_00050</code> through to <code>ctyp_00099</code> are explicitly reserved for various types of producers.</p>
+<ul>
+<li>Director</li>
+<li>Assistant Director</li>
+<li>First Assistant Director</li>
+<li>Second Assistant Director</li>
+<li>Associate Director</li>
+<li>Third Assistant Director</li>
+<li>Second Unit Director</li>
+<li>Second Second Assistant Director</li>
+<li>Trainee Assistant Director</li>
+<li>Second Director</li>
+<li>Additional Second Assistant Director</li>
+<li>Creative Director</li>
+<li>Chief Assistant Director</li>
+<li>Technical Director</li>
+<li>Associate Creative Director</li>
+<li>Coordinating Director</li>
+<li>Director's Assistant</li>
+<li>Key Second Assistant Director</li>
+<li>Team Director</li>
+<li>Additional Assistant Director</li>
+<li>Floor Runner</li>
+<li>Stage Manager</li>
+<li>Additional Third Assistant Director</li>
+<li>Second Unit Assistant Director</li>
+<li>Unit Director</li>
+<li>Production Assistant</li>
+<li>Scheduling Assistant Director</li>
+<li>Director Trainee</li>
+<li>Action Director</li>
+<li>Fourth Assistant Director</li>
+<li>Segment Director</li>
+<li>Field Director</li>
+<li>Co-Director</li>
+<li>Executive Director</li>
+<li>Dubbing Director</li>
+</ul>
+<h4 id="writers">Writers<a class="headerlink" href="#writers" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Writer</li>
+<li>Screenplay by</li>
+<li>Head Writer</li>
+<li>Story Editor</li>
+<li>Staff Writer</li>
+<li>Script Developer</li>
+<li>Co-writer</li>
+<li>Concept by</li>
+<li>Collaborating Writer</li>
+<li>Executive Story Editor</li>
+<li>Co-head Writer</li>
+<li>Associate Head Writer</li>
+<li>Screenwriter</li>
+<li>Dialogue Writer</li>
+<li>Contributing Writer</li>
+<li>Story Consultant</li>
+<li>Creative Writer</li>
+<li>Supervising Writer</li>
+<li>Showrunner</li>
+<li>Based on characters by</li>
+<li>Senior Writer</li>
+<li>ADR Scriptwriter</li>
+<li>Series Creator</li>
+<li>Additional Writing by</li>
+<li>Creative Consultant</li>
+<li>Lyricist</li>
+</ul>
+<h4 id="production-managers">Production Managers<a class="headerlink" href="#production-managers" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Production Manager</li>
+<li>Post-Production Supervisor</li>
+<li>Executive in Charge of Production</li>
+<li>Unit Production Manager</li>
+<li>Unit Manager</li>
+<li>Production Supervisor</li>
+<li>Production Assistant</li>
+<li>Assistant Production Manager</li>
+<li>Head of Production</li>
+<li>Post-Production Manager</li>
+</ul>
+<h4 id="camera-department">Camera Department<a class="headerlink" href="#camera-department" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Director of Photography</li>
+<li>Assistant Director of Photography</li>
+<li>Camera Operator</li>
+<li>Gaffer</li>
+<li>Assistant Camera</li>
+<li>Grip</li>
+<li>First Assistant Camera</li>
+<li>Electrician</li>
+<li>Still Photographer</li>
+<li>Lighting Technician</li>
+<li>Second Assistant Camera</li>
+<li>Key Grip</li>
+<li>Clapperboard Loader</li>
+<li>Focus Puller</li>
+<li>Lighting Director</li>
+<li>Steadicam Operator</li>
+<li>Drone Operator</li>
+<li>Jib Operator</li>
+<li>Dolly Pusher</li>
+<li>Digital Imaging Technician</li>
+<li>Best Boy</li>
+<li>Dolly Grip</li>
+<li>Best Boy Electric</li>
+<li>Best Boy Grip</li>
+<li>Camera Assistant</li>
+<li>Lighting Assistant</li>
+<li>Camera Trainee</li>
+<li>Video Operator</li>
+<li>Rigging Grip</li>
+<li>Camera Utility</li>
+<li>Rigging Gaffer</li>
+<li>Video Assistant</li>
+<li>Additional Photography</li>
+<li>Rigging Electrician</li>
+<li>Chief Lighting Technician</li>
+<li>Additional Electrician</li>
+<li>Drone Pilot</li>
+<li>Loader</li>
+</ul>
+<h3 id="genre-types">Genre Types<a class="headerlink" href="#genre-types" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Absurdist</li>
+<li>Action</li>
+<li>Action-Comedy</li>
+<li>Adult</li>
+<li>Adventure</li>
+<li>Alternate History</li>
+<li>Animation</li>
+<li>Anime</li>
+<li>Anthropological Drama</li>
+<li>Biopic</li>
+<li>Buddy Comedy</li>
+<li>CGI</li>
+<li>Claymotion</li>
+<li>Combat</li>
+<li>Comedy</li>
+<li>Cop</li>
+<li>Courtroom</li>
+<li>Crime</li>
+<li>Cyberpunk</li>
+<li>Dark Comedy</li>
+<li>Dark Fantasy</li>
+<li>Detective</li>
+<li>Disaster</li>
+<li>Docudrama</li>
+<li>Documentary</li>
+<li>Drama</li>
+<li>Dystopian</li>
+<li>Espionage</li>
+<li>Experimental</li>
+<li>Family</li>
+<li>Fantasy</li>
+<li>Film Noir</li>
+<li>Found Footage</li>
+<li>Gameshow</li>
+<li>Gangster</li>
+<li>Ghost</li>
+<li>Gore</li>
+<li>Heist</li>
+<li>High Fantasy</li>
+<li>Historical</li>
+<li>Historical Fiction</li>
+<li>Horror</li>
+<li>Legal Drama</li>
+<li>Live-Action</li>
+<li>Martial Arts</li>
+<li>Medical Drama</li>
+<li>Melodrama</li>
+<li>Military</li>
+<li>Mockumentary</li>
+<li>Monster</li>
+<li>Music</li>
+<li>Musical</li>
+<li>Mystery</li>
+<li>Mythological</li>
+<li>News</li>
+<li>Occult</li>
+<li>Parody</li>
+<li>Period Piece</li>
+<li>Period Romance</li>
+<li>Philosophical Drama</li>
+<li>Police Procedural</li>
+<li>Political Drama</li>
+<li>Post-Apocalyptic</li>
+<li>Prank</li>
+<li>Psychological Thriller</li>
+<li>Puppetry</li>
+<li>Reality TV</li>
+<li>Religious</li>
+<li>Religious Drama</li>
+<li>Road Comedy</li>
+<li>Romance</li>
+<li>Romance Drama</li>
+<li>Romance Thriller</li>
+<li>Romantic Comedy</li>
+<li>Satire</li>
+<li>Science Fiction</li>
+<li>Short</li>
+<li>Sitcom</li>
+<li>Sketch Comedy</li>
+<li>Slapstick Comedy</li>
+<li>Slasher</li>
+<li>Space Opera</li>
+<li>Spoof</li>
+<li>Sport</li>
+<li>Steampunk</li>
+<li>Stop Motion Animation</li>
+<li>Superhero</li>
+<li>Surrealist</li>
+<li>Talkshow</li>
+<li>Tech Noir</li>
+<li>Teen Drama</li>
+<li>Thriller</li>
+<li>Urban Fantasy</li>
+<li>Utopian</li>
+<li>War</li>
+<li>Werewolf</li>
+<li>Western</li>
+<li>Vampire</li>
+<li>Zombie</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; SQBX Media Group 2023  &#124;  <a href="https://www.sqbx.uk" target="_blank">www.sqbx.uk</a>
+
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/sqbxmediagroup/docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "content.action.edit", "navigation.footer"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
+      
+    
+  </body>
+</html>
