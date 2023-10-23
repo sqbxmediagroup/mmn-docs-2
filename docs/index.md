@@ -19,6 +19,7 @@ Shwmae a croeso! Welcome to SQBX Docs, your one-stop shop for production, web se
 
 ## What is SQBX?
 SQBX Media Group (_pronounced "Square Box"_) is a media production company based in Cardiff, Wales.
+
 __'We create'__ is our motto, as we produce all forms of digital media: videos, short films, websites, advertising & marketing, digital tools & services, radio shows, and a whole lot more!
 
 To find out more about what we do, take a look at our website: [sqbx-web].
@@ -26,11 +27,11 @@ To find out more about what we do, take a look at our website: [sqbx-web].
 ## Getting Started
 There is a **_lot_** of content on this website, so please don't try to use this service blindly! To help you out, we have broken the key areas of this site into sections, shown below:
 
-- [Using SQBX Docs]
-- [My37HRD]
-- [projectBase]
-- [Production]
-- [Technical]
+- [Using SQBX Docs](/about-docs)
+- [My37HRD](/my37hrd)
+- [projectBase](/projectbase)
+- [Production](/production)
+- [Technical](/technical)
 
 We advise to avoid the 'technical' area as it will contain a lot of irrelevant information to everyone except SQBX staff. Don't worry, nothing confidential is stored on this site.
 
@@ -43,9 +44,12 @@ Although we do endeavour to keep the information on this site up-to-date, SQBX M
 
 ## Contact
 Spotted a mistake? Contact us: [mailto:docs-gh-spt@sqbx.uk](docs-gh-spt@sqbx.uk).
+
 Need further help or advice? Email: [mailto:desk-spt@sqbx.uk](desk-spt@sqbx.uk).
 
+
 _Need to contact us regarding a data protection issue? Email: [mailto:dpo-iss-spt@sqbx.uk](dpo-iss-spt@sqbx.uk)._
+
 _Need to contact us regarding a copyright issue? Email: [mailto:copy-iss-spt@sqbx.uk](copy-iss-spt@sqbx.uk)._
 
 
